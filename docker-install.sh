@@ -3,6 +3,7 @@
 
 ## sequence to install docker on centos 7
 sudo yum update -y
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2
 sudo yum-config-manager     --add-repo     https://download.docker.com/linux/centos/docker-ce.repo
 sudo yum-config-manager     --add-repo     https://download.docker.com/linux/centos/docker-ce.repo
 sudo yum-config-manager --enable docker-ce-edge
